@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro'
+import DemoPic from '../assets/demo-pic.jpg'
+---
+
+<Layout title="Welcome to Astro.">
+	<h2 class="mb-4 text-2xl tracking-tight text-center font-extrabold text-yellow-300">
+		Nuestros productos
+	</h2>
+	<div class="w-2/3 flex items-center flex-col">
+		<Card link={DemoPic.src} reverse={false} title='Demo Product'>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic voluptatibus porro doloremque modi, dolores voluptas laborum tempore commodi ipsa exercitationem laboriosam molestiae id reiciendis dignissimos, consequatur totam! Blanditiis, mollitia.
+			</Card>
+			<Card link={DemoPic.src} reverse={true} title='Demo Product'>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe animi at cum reiciendis tempore porro commodi labore exercitationem tempora, perspiciatis voluptate eos cumque, provident illo temporibus accusamus non blanditiis!
+			</Card>
+			<Card link={DemoPic.src} reverse={false} title='Demo Product'>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe animi at cum reiciendis tempore porro commodi labore exercitationem tempora, perspiciatis voluptate eos cumque, provident illo temporibus accusamus non blanditiis!
+			</Card>
+			<Card link={DemoPic.src} reverse={true} title='Demo Product'>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe animi at cum reiciendis tempore porro commodi labore exercitationem tempora, perspiciatis voluptate eos cumque, provident illo temporibus accusamus non blanditiis!
+			</Card>
+	</div>
+	
+</Layout>
+

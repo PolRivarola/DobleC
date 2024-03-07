@@ -1,0 +1,26 @@
+---
+interface Props {
+	link: string;
+    title: string;
+    reverse: boolean;
+}
+
+const { link,title,reverse } = Astro.props;
+let rowDir = "flex-row"
+if(reverse == true){
+    rowDir = "flex-row-reverse" 
+}
+---
+
+
+
+<div class={"flex flex-col flex-1  mb-4 h-96 items-center justify-between bg-white border border-gray-200 rounded-lg shadow md:"+rowDir+"  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"}>
+    <div class="md:w-1/2">
+        <img class="object-cover  rounded-3xl p-2 " src={link} alt="">
+
+    </div>
+    <div class="flex flex-col justify-between p-4 leading-normal md:w-1/2">
+        <h5 class="mb-2 text-lg text-center md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><slot /></p>
+    </div>
+</div>
