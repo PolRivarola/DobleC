@@ -1,25 +1,67 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro'
-import DemoPic from '../assets/demo-pic.jpg'
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import DemoPic from "../assets/demo-pic.jpg";
+import Prints from "../assets/prints.png";
+import BGifts from "../assets/buisness_gifts.png";
+import Gigphy from "../assets/gigantography.png";
+import WorkCts from "../assets/work_cts.png";
 ---
 
-<Layout title="DobelC - Productos" header='Nuestros Productos'>
-	
-	
-	<div class="w-2/3 flex items-center flex-col overflow-hidden">
-		<Card id='prod-1' link={DemoPic} reverse={false} title='Demo Product'>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic voluptatibus porro doloremque modi, dolores voluptas laborum tempore commodi ipsa exercitationem laboriosam molestiae id reiciendis dignissimos, consequatur totam! Blanditiis, mollitia.
-		</Card>
-		<Card id='prod-2' link={DemoPic} reverse={true} title='Demo Product'>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe animi at cum reiciendis tempore porro commodi labore exercitationem tempora, perspiciatis voluptate eos cumque, provident illo temporibus accusamus non blanditiis!
-		</Card>
-		<Card id='prod-3' link={DemoPic} reverse={false} title='Demo Product'>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe animi at cum reiciendis tempore porro commodi labore exercitationem tempora, perspiciatis voluptate eos cumque, provident illo temporibus accusamus non blanditiis!
-		</Card>
-		<Card id='prod-4' link={DemoPic} reverse={true} title='Demo Product'>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis saepe animi at cum reiciendis tempore porro commodi labore exercitationem tempora, perspiciatis voluptate eos cumque, provident illo temporibus accusamus non blanditiis!
-		</Card>
-	</div>
-</Layout>
+<Layout title="DobelC - Productos" header="Nuestros Productos">
+  <div class="w-2/3 flex items-center flex-col overflow-hidden">
+    <Card
+      color="border-cyan-300"
+      id="prod-1"
+      link={Prints}
+      reverse={false}
+      title="IMPRESIÓN DIGITAL"
+    >
+      <li>Fotocopias color</li>
+      <li>Tarjetas personales</li>
+      <li>Flayers y carpetas</li>
+      <li>Talonarios y calcomanías</li>
+    </Card>
+    <Card
+      color="border-pink-600"
+      id="prod-2"
+      link={Gigphy}
+      reverse={true}
+      title="PLOTEADOS Y PLANOS"
+    >
+	<li>Gigantografias</li>
+	<li>Backlight | Lonas</li>
+	<li>Microperforado</li>
+	<li>Porta banners</li>
+	<li>Señalética</li>
 
+    </Card>
+    <Card
+      color="border-yellow-400"
+      id="prod-3"
+      link={WorkCts}
+      reverse={false}
+      title="ROPA DE TRABAJO"
+    >
+	<li>Remeras | Camisas</li>
+	<li>Pantalones | Buzos</li>
+	<li>Gorras | Cascos</li>
+	<li>Zapatos | Botines</li>
+	<li>Elementos de seguridad</li>
+    </Card>
+    <Card
+      color="border-black"
+      id="prod-4"
+      link={BGifts}
+      reverse={true}
+      title="REGALOS EMPRESARIALES"
+    >
+	<li>Agendas | Cuadernos</li>
+	<li>Gorras | Bolígrafos</li>
+	<li>Platos | LLaveros</li>
+	<li>Vasos | Tazas y más</li>
+	<li>Kits especiales</li>
+    </Card>
+
+  </div>
+</Layout>
